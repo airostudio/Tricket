@@ -1,0 +1,290 @@
+/* Quick Reference */
+.quick-ref {
+  background: var(--primary-green);
+  padding: var(--spacing-xl) 0;
+}
+
+.quick-ref-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+}
+
+.quick-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+}
+
+.quick-label {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.quick-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* Rule Sections */
+.rule-section {
+  margin-bottom: var(--spacing-2xl);
+  padding-bottom: var(--spacing-2xl);
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.rule-section:last-child {
+  border-bottom: none;
+}
+
+.rule-section h3 {
+  color: var(--primary-dark);
+  margin-bottom: var(--spacing-lg);
+}
+
+.rule-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.rule-section li {
+  padding: var(--spacing-sm) 0;
+  padding-left: var(--spacing-lg);
+  position: relative;
+}
+
+.rule-section li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary-green);
+  font-weight: bold;
+}
+
+/* Scoring Table */
+.scoring-table {
+  background: var(--off-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.score-row {
+  display: flex;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.score-row:last-child {
+  border-bottom: none;
+}
+
+.score-runs {
+  font-weight: 700;
+  color: var(--primary-green);
+  min-width: 120px;
+}
+
+.score-desc {
+  color: var(--dark-gray);
+}
+
+.score-row.highlight-danger {
+  background: #fef2f2;
+}
+
+.score-row.highlight-danger .score-runs {
+  color: var(--error);
+}
+
+/* Outs Grid */
+.outs-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: var(--spacing-md);
+}
+
+.out-card {
+  background: var(--off-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--primary-blue);
+}
+
+.out-card svg {
+  color: var(--primary-blue);
+  margin-bottom: var(--spacing-sm);
+}
+
+.out-card h4 {
+  margin-bottom: var(--spacing-xs);
+}
+
+.out-card p {
+  color: var(--gray);
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+.out-card.danger {
+  border-left-color: var(--error);
+  background: #fef2f2;
+}
+
+.out-card.danger svg {
+  color: var(--error);
+}
+
+/* Spirit Section */
+.spirit-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.spirit-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  align-items: center;
+  text-align: center;
+}
+
+.spirit-icon {
+  color: var(--primary-green);
+}
+
+.spirit-quote {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+  font-style: italic;
+  margin-bottom: var(--spacing-md);
+}
+
+.spirit-content ul {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+}
+
+.spirit-content li {
+  padding: var(--spacing-sm) 0;
+  color: var(--dark-gray);
+}
+
+/* Gear Grid */
+.gear-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: var(--spacing-xl);
+}
+
+.gear-card {
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-xl);
+}
+
+.gear-card.allowed {
+  background: #f0fdf4;
+  border: 2px solid var(--primary-green);
+}
+
+.gear-card.allowed svg {
+  color: var(--primary-green);
+}
+
+.gear-card.not-allowed {
+  background: #fef2f2;
+  border: 2px solid var(--error);
+}
+
+.gear-card.not-allowed svg {
+  color: var(--error);
+}
+
+.gear-card h4 {
+  margin: var(--spacing-sm) 0 var(--spacing-md);
+}
+
+.gear-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gear-card li {
+  padding: var(--spacing-xs) 0;
+  color: var(--dark-gray);
+}
+
+/* FAQ */
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.faq-item svg {
+  flex-shrink: 0;
+  color: var(--primary-blue);
+  margin-top: 2px;
+}
+
+.faq-item h4 {
+  margin-bottom: var(--spacing-xs);
+}
+
+.faq-item p {
+  color: var(--gray);
+  margin-bottom: 0;
+}
+
+/* CTA */
+.rules-page .cta-section {
+  background: var(--gradient-primary);
+}
+
+.rules-page .cta-section h2 {
+  color: var(--white);
+}
+
+.rules-page .cta-section p {
+  color: var(--white);
+  opacity: 0.9;
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+  .quick-ref-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .outs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gear-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .spirit-content {
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+  }
+}

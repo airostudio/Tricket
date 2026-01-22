@@ -1,0 +1,128 @@
+/* Consent Content */
+.consent-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.consent-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.consent-intro svg {
+  color: var(--primary-green);
+}
+
+.consent-intro p {
+  margin-bottom: 0;
+  color: var(--dark-gray);
+  font-size: 1.1rem;
+}
+
+/* Consent Sections */
+.consent-section {
+  margin-bottom: var(--spacing-2xl);
+  padding-bottom: var(--spacing-2xl);
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.consent-section:last-child {
+  border-bottom: none;
+}
+
+.consent-section h2 {
+  color: var(--primary-dark);
+  margin-bottom: var(--spacing-md);
+  font-size: 1.35rem;
+}
+
+.consent-section p {
+  color: var(--dark-gray);
+}
+
+.consent-section ul {
+  margin-bottom: var(--spacing-md);
+}
+
+.consent-section li {
+  padding: var(--spacing-xs) 0;
+  color: var(--dark-gray);
+}
+
+/* Consent Box */
+.consent-box {
+  background: var(--off-white);
+  border-left: 4px solid var(--primary-blue);
+  padding: var(--spacing-lg);
+  margin: var(--spacing-lg) 0;
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+}
+
+.consent-box p {
+  margin-bottom: 0;
+  font-style: italic;
+  color: var(--dark);
+}
+
+/* Removal Steps */
+.removal-steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.removal-step {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  background: var(--off-white);
+  border-radius: var(--radius-lg);
+}
+
+.removal-step svg {
+  flex-shrink: 0;
+  color: var(--primary-blue);
+}
+
+.removal-step h4 {
+  margin-bottom: var(--spacing-xs);
+}
+
+.removal-step p {
+  margin-bottom: 0;
+  color: var(--gray);
+}
+
+/* Consent CTA */
+.consent-cta {
+  text-align: center;
+}
+
+.consent-cta h2 {
+  margin-bottom: var(--spacing-md);
+}
+
+.consent-cta p {
+  color: var(--gray);
+  margin-bottom: var(--spacing-xl);
+}
+
+.consent-cta .cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+  .consent-intro {
+    flex-direction: row;
+    text-align: left;
+  }
+}

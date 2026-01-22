@@ -1,0 +1,18 @@
+/* App-specific styles */
+main {
+  flex: 1;
+}
+
+/* Page transition */
+main > * {
+  animation: pageEnter 0.3s ease;
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
