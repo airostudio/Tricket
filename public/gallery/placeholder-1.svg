@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg1)"/>
+
+  <!-- Tennis court lines -->
+  <rect x="50" y="50" width="300" height="200" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="3"/>
+  <line x1="200" y1="50" x2="200" y2="250" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <rect x="100" y="100" width="200" height="100" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+
+  <!-- Cartoon bat -->
+  <g transform="translate(150, 100) rotate(-30)">
+    <rect x="0" y="0" width="15" height="60" rx="3" fill="#d4a574"/>
+    <rect x="-3" y="60" width="21" height="35" rx="5" fill="#d4a574"/>
+    <rect x="0" y="0" width="15" height="12" rx="3" fill="#8b6f4e"/>
+  </g>
+
+  <!-- Tennis ball -->
+  <circle cx="250" cy="180" r="25" fill="#c8e64a"/>
+  <path d="M 230 195 Q 250 175 270 195" fill="none" stroke="white" stroke-width="3"/>
+  <path d="M 232 165 Q 250 185 268 165" fill="none" stroke="white" stroke-width="3"/>
+
+  <!-- Coming Soon text -->
+  <rect x="100" y="220" width="200" height="50" rx="10" fill="rgba(34,197,94,0.9)"/>
+  <text x="200" y="252" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">COMING SOON</text>
+</svg>

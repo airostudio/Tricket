@@ -10,6 +10,7 @@ import Contact from './pages/Contact'
 import Fixtures from './pages/Fixtures'
 import Consent from './pages/Consent'
 import Waiver from './pages/Waiver'
+import Flyer from './pages/Flyer'
 import './App.css'
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path="/fixtures" element={<Fixtures />} />
           <Route path="/consent" element={<Consent />} />
           <Route path="/waiver" element={<Waiver />} />
+          <Route path="/flyer" element={<Flyer />} />
         </Routes>
       </main>
       <Footer />

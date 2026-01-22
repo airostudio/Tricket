@@ -1,8 +1,19 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { QrCode, Users, UserCheck, ClipboardCheck, CreditCard, Clock } from 'lucide-react'
+import { QrCode, Users, UserCheck, ClipboardCheck, CreditCard, Clock, Printer } from 'lucide-react'
+import RegistrationForm from '../components/RegistrationForm'
 import './TeamEntry.css'
 
 function TeamEntry() {
+  const [showForm, setShowForm] = useState(false)
+  const [registrationResult, setRegistrationResult] = useState(null)
+
+  const handleRegistrationSuccess = (result) => {
+    setRegistrationResult(result)
+    setShowForm(false)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   return (
     <div className="team-entry">
       {/* Hero */}
@@ -15,15 +26,40 @@ function TeamEntry() {
         </div>
       </section>
 
+      {/* Success Message */}
+      {registrationResult && (
+        <section className="section success-section">
+          <div className="container">
+            <div className="success-card">
+              <div className="success-icon">✓</div>
+              <h2>Team Registered Successfully!</h2>
+              <p>Your team code is:</p>
+              <div className="team-code-display">{registrationResult.teamCode}</div>
+              <p className="success-note">Save this code! Share it with your players so they can join your team.</p>
+              <div className="success-actions">
+                <button className="btn btn-primary" onClick={() => setRegistrationResult(null)}>
+                  Register Another Team
+                </button>
+                <Link to="/fixtures" className="btn btn-secondary">View Fixtures</Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Main QR Section */}
       <section className="section qr-section">
         <div className="container">
           <div className="qr-main-card">
             <div className="qr-display">
-              <div className="qr-placeholder">
-                <QrCode size={120} />
-                <span>Scan to Register</span>
+              <div className="qr-code-wrapper">
+                <img
+                  src="/qr-register.svg"
+                  alt="Scan to Register"
+                  className="qr-image"
+                />
               </div>
+              <span className="qr-scan-text">Scan to Register</span>
             </div>
             <div className="qr-info">
               <h2>Register Your Team</h2>
@@ -31,20 +67,31 @@ function TeamEntry() {
                 Scan the QR code or click the button below to register your team.
                 You'll need to provide team details and player information.
               </p>
-              <a
-                href="#registration-form"
-                className="btn btn-primary btn-large"
-                onClick={(e) => {
-                  e.preventDefault()
-                  alert('Registration form would open here - connect to your form provider (Jotform, Google Forms, etc.)')
-                }}
-              >
-                Register Now
-              </a>
+              <div className="qr-actions">
+                <button
+                  className="btn btn-primary btn-large"
+                  onClick={() => setShowForm(!showForm)}
+                >
+                  {showForm ? 'Hide Form' : 'Register Now'}
+                </button>
+                <Link to="/flyer" className="btn btn-secondary">
+                  <Printer size={18} />
+                  Print Flyer
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Registration Form */}
+      {showForm && (
+        <section className="section registration-section" id="registration-form">
+          <div className="container">
+            <RegistrationForm onSuccess={handleRegistrationSuccess} />
+          </div>
+        </section>
+      )}
 
       {/* What You'll Need */}
       <section className="section alt-bg">
@@ -56,26 +103,26 @@ function TeamEntry() {
               <h3>Team Info</h3>
               <ul>
                 <li>Team name</li>
-                <li>Division / age bracket</li>
-                <li>Preferred match times</li>
+                <li>Park location</li>
+                <li>Site/cabin number (optional)</li>
               </ul>
             </div>
             <div className="need-item card">
               <UserCheck size={32} />
-              <h3>Manager Details</h3>
+              <h3>Leader Details</h3>
               <ul>
-                <li>Name of Team Manager</li>
+                <li>Team leader name</li>
                 <li>Mobile number</li>
                 <li>Email address</li>
               </ul>
             </div>
             <div className="need-item card">
               <ClipboardCheck size={32} />
-              <h3>Consent</h3>
+              <h3>Player Info</h3>
               <ul>
-                <li>Waiver acknowledgement</li>
-                <li>Photo/media consent</li>
-                <li>Terms acceptance</li>
+                <li>3-10 player names</li>
+                <li>Age brackets</li>
+                <li>Consent agreement</li>
               </ul>
             </div>
           </div>
@@ -154,7 +201,7 @@ function TeamEntry() {
               <Clock size={24} />
               <h4>Before Match Day</h4>
               <ul>
-                <li>Confirm all players have joined via Player Join link</li>
+                <li>Confirm all players have registered</li>
                 <li>Collect $5 per player (or confirm courtside payment)</li>
                 <li>Remind team: arrival time is 10 mins early</li>
                 <li>Check photo consent status for each player</li>
@@ -166,7 +213,7 @@ function TeamEntry() {
               <h4>On Match Day</h4>
               <ul>
                 <li>Arrive 10 minutes before scheduled time</li>
-                <li>Complete Check-In (QR #3) immediately</li>
+                <li>Complete Check-In at the court</li>
                 <li>Pay or confirm payment with staff</li>
                 <li>Have 6 players ready with bat order agreed</li>
                 <li>Brief team: no high swings, listen to umpire</li>
@@ -202,16 +249,17 @@ function TeamEntry() {
           <h2>Ready to Register?</h2>
           <p>Get your team code and start building your squad!</p>
           <div className="cta-buttons">
-            <a
-              href="#register"
+            <button
               className="btn btn-primary btn-large"
-              onClick={(e) => {
-                e.preventDefault()
-                alert('Registration form would open here')
+              onClick={() => {
+                setShowForm(true)
+                setTimeout(() => {
+                  document.getElementById('registration-form')?.scrollIntoView({ behavior: 'smooth' })
+                }, 100)
               }}
             >
               Register Team Now
-            </a>
+            </button>
             <Link to="/rules" className="btn btn-outline btn-large">Review Rules First</Link>
           </div>
         </div>

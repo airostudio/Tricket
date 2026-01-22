@@ -37,7 +37,7 @@ function WhatItIs() {
               </p>
             </div>
             <div className="content-image">
-              <img src="/logo.svg" alt="Tricket - Cricket on the Tennis Court" />
+              <img src="/tricket-logo.png" alt="Tricket - Cricket on the Tennis Court" />
             </div>
           </div>
         </div>

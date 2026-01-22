@@ -1,0 +1,424 @@
+/* Print Controls */
+.print-controls {
+  background: var(--primary-dark);
+  color: var(--white);
+  padding: var(--spacing-2xl) 0;
+  text-align: center;
+}
+
+.print-controls h1 {
+  color: var(--white);
+  margin-bottom: var(--spacing-sm);
+}
+
+.print-controls p {
+  opacity: 0.9;
+  margin-bottom: var(--spacing-xl);
+}
+
+.control-buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+}
+
+/* Flyer Container */
+.flyer-container {
+  background: var(--light-gray);
+  padding: var(--spacing-2xl);
+  display: flex;
+  justify-content: center;
+}
+
+/* The Flyer */
+.flyer {
+  width: 210mm;
+  min-height: 297mm;
+  background: var(--white);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* Header Banner */
+.flyer-header {
+  position: relative;
+  height: 30px;
+  background: linear-gradient(90deg, var(--primary-dark) 0%, var(--primary-blue) 50%, var(--primary-green) 100%);
+}
+
+.flyer-badge {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  background: var(--cricket-red);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 800;
+  font-size: 12px;
+  transform: rotate(5deg);
+  z-index: 10;
+}
+
+/* Logo Section */
+.flyer-logo-section {
+  text-align: center;
+  padding: 20px 20px 10px;
+  background: linear-gradient(180deg, rgba(30, 58, 95, 0.05) 0%, transparent 100%);
+}
+
+.flyer-logo {
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.flyer-tagline {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+
+/* Hero Section */
+.flyer-hero {
+  position: relative;
+  height: 180px;
+  margin: 15px 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+}
+
+.flyer-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+}
+
+.hero-text {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Intro Section */
+.flyer-intro {
+  padding: 20px 25px;
+  text-align: center;
+}
+
+.flyer-intro h2 {
+  font-size: 24px;
+  color: var(--primary-dark);
+  margin-bottom: 10px;
+}
+
+.flyer-intro p {
+  font-size: 14px;
+  color: var(--dark-gray);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Features */
+.flyer-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 0 20px 20px;
+}
+
+.feature-card {
+  background: var(--off-white);
+  border-radius: 12px;
+  padding: 15px 10px;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.feature-card:hover {
+  border-color: var(--primary-green);
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 8px;
+}
+
+.feature-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.feature-card span {
+  display: block;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--primary-dark);
+}
+
+.feature-card small {
+  font-size: 11px;
+  color: var(--gray);
+}
+
+/* QR Section */
+.flyer-qr-section {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 100%);
+  margin: 0 20px;
+  border-radius: 20px;
+  padding: 25px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.qr-box {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.qr-frame {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.qr-code {
+  width: 120px;
+  height: 120px;
+  display: block;
+}
+
+.qr-instructions {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.scan-text {
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.register-text {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--primary-green);
+}
+
+.your-team-text {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.register-steps {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 14px;
+}
+
+.step-num {
+  width: 24px;
+  height: 24px;
+  background: var(--primary-green);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+/* Footer */
+.flyer-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  margin-top: 15px;
+}
+
+.footer-info {
+  display: flex;
+  gap: 20px;
+}
+
+.info-item {
+  font-size: 12px;
+  color: var(--dark-gray);
+}
+
+.info-item strong {
+  color: var(--primary-dark);
+}
+
+.footer-tagline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.tricket-text {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--primary-blue);
+  line-height: 1;
+}
+
+.cket-text {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--primary-green);
+  line-height: 1;
+  margin-top: -5px;
+}
+
+.subtitle {
+  font-size: 10px;
+  color: var(--gray);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Decorations */
+.decoration {
+  position: absolute;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.bat-decoration {
+  width: 50px;
+  top: 100px;
+  left: -10px;
+  transform: rotate(-20deg);
+}
+
+.ball-decoration {
+  width: 40px;
+  top: 80px;
+  right: 10px;
+}
+
+.stumps-decoration {
+  width: 40px;
+  bottom: 120px;
+  right: 10px;
+}
+
+/* Tips Section */
+.flyer-tips {
+  background: var(--off-white);
+  padding: var(--spacing-2xl) 0;
+}
+
+.flyer-tips h2 {
+  margin-bottom: var(--spacing-lg);
+}
+
+.flyer-tips ul {
+  list-style: none;
+  padding: 0;
+}
+
+.flyer-tips li {
+  padding: var(--spacing-sm) 0;
+  padding-left: var(--spacing-xl);
+  position: relative;
+  color: var(--dark-gray);
+}
+
+.flyer-tips li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary-green);
+  font-weight: bold;
+}
+
+/* Print Styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  .flyer-container {
+    background: none;
+    padding: 0;
+  }
+
+  .flyer {
+    box-shadow: none;
+    width: 100%;
+    min-height: auto;
+    page-break-inside: avoid;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .flyer-container {
+    padding: var(--spacing-md);
+  }
+
+  .flyer {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .flyer-qr-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .qr-box {
+    flex-direction: column;
+  }
+
+  .register-steps {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

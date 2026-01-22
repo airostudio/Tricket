@@ -3,17 +3,16 @@ import { Camera, Instagram, AlertCircle, Mail } from 'lucide-react'
 import './Gallery.css'
 
 function Gallery() {
-  // Placeholder images - replace with actual gallery images
   const galleryItems = [
-    { id: 1, type: 'image', placeholder: 'Team celebrating win' },
-    { id: 2, type: 'image', placeholder: 'Action shot - batting' },
-    { id: 3, type: 'image', placeholder: 'Kids having fun' },
-    { id: 4, type: 'image', placeholder: 'Family team photo' },
-    { id: 5, type: 'image', placeholder: 'Bowling action' },
-    { id: 6, type: 'image', placeholder: 'Trophy presentation' },
-    { id: 7, type: 'image', placeholder: 'Teams shaking hands' },
-    { id: 8, type: 'image', placeholder: 'Crowd cheering' },
-    { id: 9, type: 'image', placeholder: 'Finals day banner' },
+    { id: 1, src: '/gallery/placeholder-1.svg', alt: 'Tricket action - coming soon' },
+    { id: 2, src: '/gallery/placeholder-2.svg', alt: 'Kids playing Tricket - coming soon' },
+    { id: 3, src: '/gallery/placeholder-3.svg', alt: 'Trophy presentation - coming soon' },
+    { id: 4, src: '/gallery/placeholder-4.svg', alt: 'Photos coming soon' },
+    { id: 5, src: '/gallery/placeholder-1.svg', alt: 'Team photo - coming soon' },
+    { id: 6, src: '/gallery/placeholder-2.svg', alt: 'Match action - coming soon' },
+    { id: 7, src: '/gallery/placeholder-3.svg', alt: 'Winners - coming soon' },
+    { id: 8, src: '/gallery/placeholder-4.svg', alt: 'Gallery - coming soon' },
+    { id: 9, src: '/gallery/placeholder-1.svg', alt: 'Finals day - coming soon' },
   ]
 
   return (
@@ -48,10 +47,12 @@ function Gallery() {
           <div className="gallery-grid">
             {galleryItems.map((item) => (
               <div key={item.id} className="gallery-item">
-                <div className="gallery-placeholder">
-                  <Camera size={32} />
-                  <span>{item.placeholder}</span>
-                </div>
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  className="gallery-image"
+                  loading="lazy"
+                />
               </div>
             ))}
           </div>

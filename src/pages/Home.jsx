@@ -24,7 +24,7 @@ function Home() {
             </div>
           </div>
           <div className="hero-image">
-            <img src="/logo.svg" alt="Tricket Logo" />
+            <img src="/tricket-logo.png" alt="Tricket Logo" />
           </div>
         </div>
       </section>

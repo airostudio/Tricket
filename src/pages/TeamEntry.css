@@ -1,3 +1,60 @@
+/* Success Section */
+.success-section {
+  background: var(--primary-green);
+}
+
+.success-card {
+  background: var(--white);
+  padding: var(--spacing-2xl);
+  border-radius: var(--radius-xl);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-xl);
+}
+
+.success-icon {
+  width: 80px;
+  height: 80px;
+  background: var(--primary-green);
+  color: var(--white);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin: 0 auto var(--spacing-lg);
+}
+
+.success-card h2 {
+  margin-bottom: var(--spacing-md);
+  color: var(--primary-dark);
+}
+
+.team-code-display {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary-dark);
+  background: var(--off-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  letter-spacing: 4px;
+  margin: var(--spacing-lg) 0;
+  font-family: monospace;
+}
+
+.success-note {
+  color: var(--gray);
+  margin-bottom: var(--spacing-xl);
+}
+
+.success-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 /* QR Main Card */
 .qr-section {
   background: var(--off-white);
@@ -18,6 +75,37 @@
   justify-content: center;
 }
 
+.qr-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.qr-code-wrapper {
+  width: 200px;
+  height: 200px;
+  background: var(--white);
+  border: 3px solid var(--primary-dark);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-sm);
+}
+
+.qr-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.qr-scan-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
 .qr-placeholder {
   width: 200px;
   height: 200px;
@@ -35,6 +123,17 @@
 .qr-placeholder span {
   font-size: 0.9rem;
   font-weight: 600;
+}
+
+.qr-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+/* Registration Section */
+.registration-section {
+  background: var(--off-white);
 }
 
 .qr-info h2 {
