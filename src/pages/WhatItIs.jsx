@@ -37,7 +37,7 @@ function WhatItIs() {
               </p>
             </div>
             <div className="content-image">
-              <img src="/tricket-logo.png" alt="Tricket - Cricket on the Tennis Court" />
+              <img src="/tricket-logo.png" alt="Tricket logo - Fun, safe cricket game perfect for families and kids at caravan parks" />
             </div>
           </div>
         </div>

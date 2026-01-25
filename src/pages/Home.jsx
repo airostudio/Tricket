@@ -24,7 +24,12 @@ function Home() {
             </div>
           </div>
           <div className="hero-image">
-            <img src="/tricket-logo.png" alt="Tricket Logo" />
+            <img
+              src="/tricket-logo.png"
+              alt="Tricket mascot - Cricket bat character for tennis court cricket at Australian caravan parks"
+              width="400"
+              height="400"
+            />
           </div>
         </div>
       </section>

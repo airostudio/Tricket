@@ -10,7 +10,7 @@ function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <img src="/tricket-logo.png" alt="Tricket" className="footer-logo" />
+            <img src="/tricket-logo.png" alt="Tricket - Safe cricket game for kids and families at holiday parks" className="footer-logo" />
             <p>Cricket on the Tennis Court - a fun, safe, and exciting game for caravan park guests of all ages.</p>
             <div className="social-links">
               <a href="#" aria-label="Facebook" className="social-link">

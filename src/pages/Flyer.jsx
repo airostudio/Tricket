@@ -38,13 +38,13 @@ function Flyer() {
 
           {/* Logo Section */}
           <div className="flyer-logo-section">
-            <img src="/tricket-logo.png" alt="Tricket" className="flyer-logo" />
+            <img src="/tricket-logo.png" alt="Tricket - Fast, fun cricket for families at Australian caravan parks" className="flyer-logo" />
             <div className="flyer-tagline">Cricket on the Tennis Court</div>
           </div>
 
           {/* Hero Image */}
           <div className="flyer-hero">
-            <img src="/tricket-hero.webp" alt="Kids playing Tricket" className="flyer-hero-img" />
+            <img src="/tricket-hero.webp" alt="Families and kids playing Tricket cricket on tennis court at caravan park" className="flyer-hero-img" />
             <div className="hero-overlay">
               <span className="hero-text">Fun for the whole family!</span>
             </div>
@@ -108,7 +108,7 @@ function Flyer() {
           <div className="flyer-qr-section">
             <div className="qr-box">
               <div className="qr-frame">
-                <img src="/qr-register.svg" alt="Scan to Register" className="qr-code" />
+                <img src="/qr-register.svg" alt="QR code to register your Tricket team at Australian caravan parks" className="qr-code" />
               </div>
               <div className="qr-instructions">
                 <span className="scan-text">SCAN TO</span>

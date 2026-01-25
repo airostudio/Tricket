@@ -4,15 +4,15 @@ import './Gallery.css'
 
 function Gallery() {
   const galleryItems = [
-    { id: 1, src: '/gallery/placeholder-1.svg', alt: 'Tricket action - coming soon' },
-    { id: 2, src: '/gallery/placeholder-2.svg', alt: 'Kids playing Tricket - coming soon' },
-    { id: 3, src: '/gallery/placeholder-3.svg', alt: 'Trophy presentation - coming soon' },
-    { id: 4, src: '/gallery/placeholder-4.svg', alt: 'Photos coming soon' },
-    { id: 5, src: '/gallery/placeholder-1.svg', alt: 'Team photo - coming soon' },
-    { id: 6, src: '/gallery/placeholder-2.svg', alt: 'Match action - coming soon' },
-    { id: 7, src: '/gallery/placeholder-3.svg', alt: 'Winners - coming soon' },
-    { id: 8, src: '/gallery/placeholder-4.svg', alt: 'Gallery - coming soon' },
-    { id: 9, src: '/gallery/placeholder-1.svg', alt: 'Finals day - coming soon' },
+    { id: 1, src: '/gallery/placeholder-1.svg', alt: 'Tricket cricket action at caravan park tennis court - coming soon' },
+    { id: 2, src: '/gallery/placeholder-2.svg', alt: 'Kids and families playing safe Tricket cricket game - coming soon' },
+    { id: 3, src: '/gallery/placeholder-3.svg', alt: 'Tricket trophy presentation for winning team - coming soon' },
+    { id: 4, src: '/gallery/placeholder-4.svg', alt: 'Tricket cricket photos from Australian holiday parks - coming soon' },
+    { id: 5, src: '/gallery/placeholder-1.svg', alt: 'Family team photo after Tricket match - coming soon' },
+    { id: 6, src: '/gallery/placeholder-2.svg', alt: 'Fast-paced Tricket cricket match action - coming soon' },
+    { id: 7, src: '/gallery/placeholder-3.svg', alt: 'Tricket competition winners celebration - coming soon' },
+    { id: 8, src: '/gallery/placeholder-4.svg', alt: 'Tricket gallery from caravan parks across Australia - coming soon' },
+    { id: 9, src: '/gallery/placeholder-1.svg', alt: 'Tricket finals day at holiday park - coming soon' },
   ]
 
   return (

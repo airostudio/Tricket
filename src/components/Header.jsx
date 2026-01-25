@@ -23,7 +23,7 @@ function Header() {
     <header className="header">
       <div className="container header-container">
         <Link to="/" className="logo" onClick={closeMenu}>
-          <img src="/tricket-logo.png" alt="Tricket - Cricket on the Tennis Court" />
+          <img src="/tricket-logo.png" alt="Tricket - Fast, fun cricket game for families at Australian caravan parks" />
         </Link>
 
         <button

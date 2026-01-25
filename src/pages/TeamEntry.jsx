@@ -55,7 +55,7 @@ function TeamEntry() {
               <div className="qr-code-wrapper">
                 <img
                   src="/qr-register.svg"
-                  alt="Scan to Register"
+                  alt="QR code to register your Tricket cricket team at Australian caravan parks"
                   className="qr-image"
                 />
               </div>
